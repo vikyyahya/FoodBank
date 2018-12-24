@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bappy.foodbank.activity.Adminstaff"
+    android:orientation="vertical"
+    android:background="@drawable/food_app"
+    android:id="@+id/only_staff"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.06"
+        android:gravity="center"
+        android:text="bappy"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <info.hoang8f.widget.FButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aeee"
+            android:textColor="@drawable/blue_color"
+            android:textAlignment="center"
+            android:text="All order"
+            android:textSize="30sp"
+            android:onClick="allorder"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.00"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="12dp"
+        app:buttonColor="@color/buttoncolor"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bappy"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:id="@+id/date"
+        android:layout_marginTop="40dp"/>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/getdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aeee"
+        android:textAlignment="center"
+        android:text="Get date"
+        android:textSize="35sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="100dp"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="12dp"
+        app:buttonColor="@color/buttoncolor"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#aeee"
+        android:id="@+id/orderlist"
+        android:text="order list"
+        android:textSize="35sp"
+        android:onClick="orderlist"
+        android:layout_gravity="center"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="12dp"
+        app:buttonColor="@color/buttoncolor"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#aeee"
+        android:id="@+id/deliverylist"
+        android:text="delivery list"
+        android:textSize="35sp"
+        android:onClick="deliverylist"
+        android:layout_gravity="center"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="12dp"
+        app:buttonColor="@color/buttoncolor"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>

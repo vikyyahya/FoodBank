@@ -1,0 +1,110 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/food_app"
+    android:id="@+id/home_app">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Log In"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/logger"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home_icon"
+        android:layout_marginTop="35dp"
+        />
+
+    <com.example.bappy.foodbank.FButton
+        android:id="@+id/restaurent"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Restaurant"
+        android:textSize="15sp"
+        app:buttonColor="@color/buttoncolor"
+        android:onClick="parsejsonrestaurent"
+        android:shadowColor="@color/shadowcolor"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="6dp"
+        />
+
+    <com.example.bappy.foodbank.FButton
+        android:id="@+id/findfood"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="parsejsonfood"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="I Am Hungry For"
+        android:textSize="15sp"
+        app:buttonColor="@color/buttoncolor"
+        android:shadowColor="@color/shadowcolor"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="6dp"/>
+
+    </LinearLayout>
+    <!--<at.markushi.ui.CircleButton-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--app:cb_color="@color/buttoncolor"-->
+        <!--app:cb_pressedRingWidth="17dp"-->
+        <!--android:src="@drawable/ic_email_black_24dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:id="@+id/circleButton" />-->
+
+    <!--<at.markushi.ui.CircleButton-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--app:cb_color="@color/buttoncolor"-->
+        <!--app:cb_pressedRingWidth="17dp"-->
+        <!--android:src="@drawable/ic_facebook_circular_logo"-->
+        <!--android:layout_marginRight="74dp"-->
+        <!--android:layout_marginEnd="74dp"-->
+        <!--android:layout_alignTop="@+id/circleButton"-->
+        <!--android:layout_alignRight="@+id/circleButton"-->
+        <!--android:layout_alignEnd="@+id/circleButton" />-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/email2"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="send"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="FacebookPage"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_toLeftOf="@+id/profile_image"
+        android:layout_toStartOf="@+id/profile_image" />
+</RelativeLayout>

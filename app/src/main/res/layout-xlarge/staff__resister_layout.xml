@@ -1,0 +1,149 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bappy.foodbank.activity.Staff_Resister"
+    android:background="@drawable/food_app"
+    android:orientation="vertical"
+    android:id="@+id/staff_resister">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Make Your Registration Successfull By Filling All Field\nIf Valid Then Request Will Be Sent To Admin For Enterence"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="52dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_above="@+id/linearLayout20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout20">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Your Username"
+        android:textAlignment="center"
+        android:textColorHint="#fff"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#757575">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Role"
+            android:textColor="#00a"
+            android:textSize="35sp"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerrole"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="center"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearres"
+        android:background="#757575">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant : "
+        android:textColor="#00a"
+        android:textSize="35sp"
+        android:layout_marginTop="6dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/spinnerres"
+        android:textAlignment="center"
+        ></Spinner>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/restaurentpassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Restaurent Password"
+        android:textAlignment="center"
+        android:textColorHint="#fff"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:maxLines="1"
+        />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="35sp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password Again"
+            android:textAlignment="center"
+            android:textColorHint="#fff"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <com.example.bappy.foodbank.FButton
+        android:id="@+id/resistor"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Resister"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:background="#aeee"
+        android:onClick="onResister"
+        app:cornerRadius="17dp"
+        android:shadowColor="#000"
+        app:shadowEnabled="true"
+        app:shadowHeight="4dp"
+        app:buttonColor="@color/buttoncolor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp" />
+
+</RelativeLayout>

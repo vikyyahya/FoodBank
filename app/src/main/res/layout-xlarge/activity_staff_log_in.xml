@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/food_app"
+    android:orientation="vertical"
+    android:id="@+id/staff_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/linearLayout5">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We Are In Staff Log-In Page And Please Give Your Information To Log-In"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Your Username"
+        android:textAlignment="center"
+        android:textColorHint="#fff"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_marginTop="90dp"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:background="#757575"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Role"
+            android:textColor="#00a"
+            android:textSize="35sp"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/spinnerrole"
+            android:textAlignment="center"
+            ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearres"
+        android:background="#757575">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant : "
+            android:textColor="#00a"
+            android:textSize="35sp"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/spinnerres"
+            android:textAlignment="center"
+            ></Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/restaurentpassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:textAlignment="center"
+        android:textColorHint="#fff"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"/>
+    </LinearLayout>
+
+    <com.example.bappy.foodbank.FButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log-In"
+        android:padding="10dp"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:background="#aeee"
+        android:onClick="onLogin"
+        app:buttonColor="@color/buttoncolor"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="7dp"
+        android:layout_marginBottom="242dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <com.example.bappy.foodbank.FButton
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="i am superadmin"
+        android:textSize="35sp"
+        android:layout_gravity="end"
+        android:background="#aeee"
+        android:onClick="onLoginsuperadmin"
+        app:buttonColor="@color/buttoncolor"
+        android:shadowColor="#000"
+        app:shadowHeight="4dp"
+        app:shadowEnabled="true"
+        app:cornerRadius="7dp"
+        android:id="@+id/FButton"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+</RelativeLayout>
